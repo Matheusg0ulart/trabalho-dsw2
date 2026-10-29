@@ -23,7 +23,7 @@ services:
     environment:
       DB_URL: ${DB_URL:-jdbc:mysql://mysql:3306/waldo_contabilidade?useSSL=false&allowPublicKeyRetrieval=true}
       DB_USERNAME: ${DB_USER:-root}
-      DB_PASSWORD: ${DB_PASSWORD:-root}
+      DB_PASSWORD: ${DB_PASSWORD:-1234}
       APP_BOOTSTRAP_SECRET: ${APP_BOOTSTRAP_SECRET:-chave123}
     ports:
       - "${BACKEND_PORT:-8080}:8080"

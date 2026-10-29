@@ -1,11 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>Frontend</title>
+  <title>Waldo Ferreira Assessoria Contábil | Soluções Inteligentes para sua Empresa</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#0B132B">
+  <meta name="description" content="Assessoria contábil moderna, planejamento tributário, folha de pagamento, abertura de empresas e gestão fiscal estratégica para tornar seu negócio seguro e lucrativo.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Chart.js local -->
+  <script src="js/chart.min.js"></script>
+
+  <!-- Tema Noturno Rápido -->
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('WALDO_PUBLIC_THEME') || localStorage.getItem('WALDO_ADMIN_THEME');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch(e) {}
+    })();
+  </script>
 </head>
 <body>
   <app-root></app-root>

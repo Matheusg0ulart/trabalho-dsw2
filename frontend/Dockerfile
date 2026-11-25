@@ -7,6 +7,7 @@ RUN npm ci
 
 COPY . .
 RUN npm run build
+RUN [ -f dist/frontend/browser/index.html ] || cp dist/frontend/browser/index.csr.html dist/frontend/browser/index.html
 
 # Etapa 2: Servir com Nginx
 FROM nginx:1.27-alpine
